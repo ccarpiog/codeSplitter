@@ -1,0 +1,16 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(python3 scripts/extract_lines.py --help)",
+      "Bash(python3 scripts/extract_lines.py /tmp/test_source.txt /tmp/test_target.txt 3 5)",
+      "Read(//private/tmp/**)",
+      "Bash(python3 scripts/extract_lines.py /tmp/test_source.txt /tmp/test_target.txt 7 9)",
+      "Bash(cat /tmp/test_target.txt)",
+      "Bash(python3 scripts/extract_lines.py /tmp/test_source.txt /tmp/test_moved.txt 1 2 --mode move)",
+      "Bash(cat /tmp/test_moved.txt)",
+      "Bash(cat /tmp/test_source.txt)"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}
